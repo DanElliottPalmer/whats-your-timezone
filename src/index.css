@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #335977;
+  --font-sans-serif: system-ui, sans-serif;
+  --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  --font-size-sm: clamp(0.8rem, -0.09vw + 0.82rem, 0.75rem);
+  --font-size-base: clamp(1rem, 0vw + 1rem, 1rem);
+  --font-size-md: clamp(1.25rem, 0.15vw + 1.21rem, 1.33rem);
+  --font-size-lg: clamp(1.56rem, 0.39vw + 1.47rem, 1.78rem);
+  --font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
+  --font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
+  --font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem);
+  --spacing-base: 8px;
+  --spacing-xsmall: calc(var(--spacing-base) * 0.5);
+  --spacing-small: calc(var(--spacing-base) * 2);
+  --spacing-medium: calc(var(--spacing-base) * 2.5);
+  --spacing-large: calc(var(--spacing-base) * 3);
+  --spacing-xlarge: calc(var(--spacing-base) * 4);
+  --spacing-xxlarge: calc(var(--spacing-base) * 5);
+
+  background-color: var(--color-primary);
+  color-scheme: light dark;
+  color: var(--color-secondary);
+  font-family: var(--font-sans-serif);
+  font-size: var(--font-size-base);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #335977;
+    --color-secondary: #ffffff;
+  }
+}

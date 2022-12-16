@@ -1,0 +1,30 @@
+{
+  "name": "whats-your-timezone",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "test": "web-test-runner",
+    "test:coverage": "web-test-runner --coverage",
+    "test:watch": "web-test-runner --watch"
+  },
+  "dependencies": {
+    "lit": "^2.4.0",
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^3.1.7",
+    "@types/mustache": "^4.2.1",
+    "@web/dev-server-esbuild": "^0.3.3",
+    "@web/test-runner": "^0.15.0",
+    "@web/test-runner-playwright": "^0.9.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+}
